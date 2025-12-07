@@ -1,0 +1,2 @@
+<?php
+$OPENAI_KEY = "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";

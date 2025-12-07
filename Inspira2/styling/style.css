@@ -1,0 +1,66 @@
+/* Palette */
+:root{
+  --text-dark:#000000;
+  --main-bg:#D2B0A2;
+  --minor-bg:#F9DBC2;
+  --accent:#9F9A7F;
+  --white: #fff;
+}
+
+/* Global */
+body{
+  background-color:var(--white);
+  color:var(--text-dark);
+  font-family:'Poppins',sans-serif;
+}
+
+/* === Navbar (your header) === */
+nav.navbar{
+  background-color:var(--main-bg) !important;  /* F9DBC2 */
+  box-shadow:0 2px 6px rgba(0,0,0,.05);
+  padding: 2px; 
+}
+nav.navbar .navbar-brand{
+  font-family: "snell-roundhand-lt-std", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size:2rem;
+  letter-spacing:.5px;
+  color:var(--text-dark) !important;
+}
+nav.navbar .nav-link{
+  color:var(--text-dark) !important;
+  font-weight:500;
+}
+nav.navbar .nav-link:hover{
+  color:var(--white) !important;
+}
+
+/* Footer (unchanged except using your palette) */
+footer{
+  background-color:var(--main-bg);
+  color:var(--text-dark);
+  text-align:center;
+  padding:18px 0;
+  box-shadow:0 -2px 6px rgba(0,0,0,.05);
+}
+
+/* Buttons */
+.btn-primary,.btn-search{
+  background-color:var(--accent);
+  border:none;
+  color:#fff;
+  border-radius:40px;
+  padding:10px 25px;
+  font-weight:500;
+  transition:all .3s ease;
+}
+.btn-primary:hover,.btn-search:hover{ background-color:#ffffff; }
+
+  
+  
+  
+  
+  
+  
+  

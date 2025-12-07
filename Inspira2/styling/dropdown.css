@@ -1,0 +1,50 @@
+/* -----------------------------------
+   MORE BUTTON & DROPDOWN MENU
+----------------------------------- */
+
+.card {
+  position: relative;
+}
+
+.more-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 6px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 10px;
+  width: 180px;
+  display: none;
+  z-index: 999;
+}
+
+.dropdown-menu button {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  color: #9F9A7F;
+  font-weight: 500;
+}
+
+.dropdown-divider {
+  margin: 6px 0;
+  height: 1px;
+  background: #eee;
+}

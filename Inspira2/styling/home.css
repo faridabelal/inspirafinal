@@ -1,0 +1,107 @@
+
+  
+  /* Layout basics */
+  body {
+    overflow-x: hidden;
+  }
+  
+  .image-stack {
+    position: relative;
+    width: 700px;           /* fixed width cluster area */
+    height: 620px;          /* fixed height cluster area */
+    margin: -60px auto;
+    left: 40px; 
+  }
+  
+  .stack-img {
+    position: absolute;
+    width: 270px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.35s ease;
+  }
+  
+  /* Layered card positioning (anchored layout that doesn’t drift) */
+  .img1 {
+    top: -20;
+    left: 0;
+    transform: rotate(-4deg);
+    z-index: 3;
+  }
+  .img2 {
+    top: 0px;
+    left: 230px;
+    transform: rotate(3deg);
+    z-index: 2;
+  }
+  .img3 {
+    top: 220px;
+    left: 30px;
+    transform: rotate(-2deg);
+    z-index: 4;
+  }
+  .img4 {
+    top: 190px;
+    left: 270px;
+    transform: rotate(-2deg);
+    z-index: 1;
+  }
+  
+  /* Hover effect */
+  .stack-img:hover {
+    transform: scale(1.06);
+    z-index: 5;
+  }
+  
+
+  
+.stack-img:nth-child(1) { transform: rotate(-5deg); }
+.stack-img:nth-child(2) { transform: rotate(3deg); }
+.stack-img:nth-child(3) { transform: rotate(-2deg); }
+.stack-img:nth-child(4) { transform: rotate(4deg); }
+
+  
+  /* Transparent / glassy search bar */
+  .search-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    z-index: 10;
+    text-align: center;
+  }
+  
+  .search-bar {
+    background-color: rgba(255, 255, 255, 0.35);  /* less opacity */
+    backdrop-filter: blur(8px);
+    border: none; /* no stroke */
+    border-radius: 40px;
+    padding: 12px 20px;
+    font-size: 1.05rem;
+    color: var(--dark-brown);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* subtle softness */
+    width: 100%;
+  }
+  .search-bar::placeholder {
+    color: #8c6e5b;
+    opacity: 0.8;
+  }
+  
+  /* Search button */
+  .btn-search {
+    background-color: var(#9F9A7F);
+    border: none;
+    color: white;
+    border-radius: 40px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  .btn-search:hover {
+    background-color: #D2B0A2;
+  }
+  
+  
